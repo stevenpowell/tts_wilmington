@@ -53,6 +53,5 @@ puts "Enter numbers, create second array.  Enter done to finish"
 array2 = array_generator
 puts array2 
 puts ""
-
 array3 = array_adder(array1, array2)
 puts array3

@@ -7,16 +7,16 @@
 puts "How many players?"
 
 num_players = gets.chomp.to_i
+suit = [ D, S, C, H]
+deck = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,]
+dealt = []
+counter = 0
+hand_count = 0
 
-def dealer(num_players card suit dealt)
+while num_players > 0
+	dealer(card suit dealt)
 
-	suit = [ D, S, C, H]
-	deck = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,]
-	dealt = []
-	counter = 0
-	hand_count = 0
-
-	if 
+def dealer num_players card suit dealt
 
 	while counter < num_players
 
@@ -29,13 +29,13 @@ def dealer(num_players card suit dealt)
 		card1 = ""
 		card2 = ""
 
-		if shuffle2 = 11
+		if shuffle2 == 11
 			shuffle2 = "jack"
-		elsif shuffle2 = 12
+		elsif shuffle2 == 12
 			shuffle2 = "queen"
-		elsif shuffle2 = 13
+		elsif shuffle2 == 13
 			shuffle2 = "king"
-		elsif shuffle2 = 0
+		elsif shuffle2 == 0
 			shuffle2 = "ace"
 		end
 
@@ -51,13 +51,13 @@ def dealer(num_players card suit dealt)
 				hand_count += 1
 			end
 
-		
+		counter += 1
 	end
-
-
-
-
-
+end
+end
+return card
+return suit
+return dealt
 end
 
 dealer num_players card.length suit.length

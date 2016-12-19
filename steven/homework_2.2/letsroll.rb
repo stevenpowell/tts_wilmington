@@ -11,4 +11,6 @@ puts "Place your bets!"
 sleep 1
 puts "\*shake\* \*shake\*"
 sleep 1
+puts "#{roll2} and a #{roll1}"
+puts "all together now"
 puts sum
