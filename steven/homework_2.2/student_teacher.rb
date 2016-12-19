@@ -7,14 +7,16 @@
 students = ["paul", "ringo", "john", "george"]
 teachers = ["raphael", "michaelangelo", "donatelo", "leonardo"]
 
-def interrogator(input)
-	students.each do |test|
-		if input == test
-		classifcation = student
+def interrogator(input, students, teachers)
+	students.each do |student|
+		if input == student
+		classification = "student"
 	end
-	teachers.each do |test|
-		if input == test
-		classification = teacher
+end
+	teachers.each do |teacher|
+		if input == teacher
+		classification = "teacher"
+	end
 	end
 return classification
 end
@@ -22,9 +24,11 @@ end
 puts "Hey, what's your name pal?"
 input = gets.chomp.downcase
 
-if classification == student
+classification = interrogator(input, students, teachers)
+
+if classification == "student"
 	puts "Hello padawan #{input.capitalize}."
-elsif classification == teacher
+elsif classification == "teacher"
 	puts "Greetings professor #{input.capitalize}."
 else 
 	puts "You ain\'t on the list pal"
