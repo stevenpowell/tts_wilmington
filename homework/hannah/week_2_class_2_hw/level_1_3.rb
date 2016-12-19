@@ -1,6 +1,6 @@
 def get_number
 	puts "Enter a number:"
-	return gets.to_f
+	return gets.to_f #defaults to 0.0 if string is entered
 end
 
 def fill_array(num)
