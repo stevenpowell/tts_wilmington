@@ -16,7 +16,6 @@ end
 if !is_teacher
 	students.each do |student|
 		if student.downcase == name.downcase
-			puts student
 			is_student = true
 		end
 	end
