@@ -1,6 +1,5 @@
 def get_number
-	puts "Enter a number:"
-	return gets.to_f #defaults to 0.0 if string is entered
+	return rand(1000) ##limiting to max of 1000 to prevent giant numbers
 end
 
 def fill_array(num)
