@@ -1,8 +1,14 @@
 class Animal
 
+	attr_accessor :weight
+
+	def initialize(weight)
+		@weight = weight
+	end
+
 	def print_weight
 
-		puts "20 lbs"
+		puts @weight
 	end
 
 	def speak
@@ -13,8 +19,15 @@ end
 
 class Dog < Animal
 
+	attr_accessor :breed
+
+	def initialize(weight, breed)
+		super(weight)
+		@breed = breed
+	end
 
 	def speak
+		super
 		puts "woof woof!"
 	end
 
@@ -24,16 +37,22 @@ class Dog < Animal
 
 end
 
-
-fluffy = Animal.new();
-
+fluffy = Animal.new(14);
+puts "Fluffy the Animal says:"
 fluffy.speak()
 
-fido = Dog.new()
+
+fido = Dog.new(20, "Cockapoo")
+puts "Fido the dog weighs"
 fido.print_weight
+puts "and Fido says"
 fido.speak
+puts "Roll over Fido!"
 fido.roll_over
 
+puts "Fido is a #{fido.breed}"
+
+puts "Can Fluffy roll over?"
 fluffy.roll_over
 
 # s = "Hello"
