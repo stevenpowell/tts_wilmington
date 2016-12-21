@@ -36,7 +36,7 @@ class Account
 		end
 	end
 
-	def pin_error(pin)
+	def pin_error
 		puts "Access denied: incorrect PIN."
 	end
 
