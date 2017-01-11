@@ -1,0 +1,82 @@
+.menu {
+	background-color: #0f1020;
+	padding: 4px 2px;
+}
+.menu a {
+  color: #587d71;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 14px 10px;
+
+}
+
+.menu li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/224626_100695893292744_2370154_n.jpg?oh=055972c6a2e1c1685c9837152d73f43e&oe=58E30827");
+  height: 460px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: #587d71;
+  font-size: 46px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 25px;
+  color: #587d71;
+}
+
+.jumbotron a {
+	color: black;
+	font-size: 15px;
+}
+
+.sub-banner {
+	background-color: #e1e2ef;
+	font-family: 'Shift', sans-serif;
+  	font-size: 18px;
+  	font-weight: bold;
+  	padding: 5px 5px;
+
+}
+
+.linux-col {
+	background-color: #77BA99;
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 18px;
+  	text-align: center;
+
+}
+.talent-bar h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.talent-bar {
+	background-color: #05204a;
+}
+
+.ruby-col {
+	background-color: #D33F49;
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 18px;
+  	text-align: center;
+}
+
+.cloud-col {
+	background-color: #D2691E;
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 18px;
+	text-align: center;
+}
+
+audio {
+	display:none;
+}
