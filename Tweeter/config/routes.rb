@@ -1,15 +1,23 @@
 Rails.application.routes.draw do
-  get 'profiles/show'
+	get 'likes/create'
 
-  get 'profiles/index'
+	get 'profiles/show'
 
-  devise_for :users
+	get 'profiles/index'
+
+	devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :tweets
+	resources :tweets do
+  	resource :like
+	end
 
-  root 'tweets#index'
+	resources :relationships
+
+	root 'tweets#index'
   
-  get "profiles/:id" => "profiles#show", as: :profile
+	get "profiles/:id" => "profiles#show", as: :profile
 
- get "profiles" => "profiles#index"
+	get "profiles" => "profiles#index"
+	
+	get "feed" => "profiles#feed"
 end
