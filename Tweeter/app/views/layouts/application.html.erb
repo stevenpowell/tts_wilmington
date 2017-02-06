@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <%= render "layouts/navbar" %>
     <%= yield %>
   </body>
   <%= link_to "terminator", destroy_user_session_path,
