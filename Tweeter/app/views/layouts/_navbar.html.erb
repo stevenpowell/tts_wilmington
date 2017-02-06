@@ -1,15 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-<div class="navbar-class">
-<div class="container">
+  <div class="navbar-class">
+    <div class="container">
+    <%= link_to image_tag("twitterlogo.png", :size => "40x30"), root_path, id: "logo" %>
 
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-
-  <ul class="nav navbar-nav">
-  <li> test </li>
-
-  <li><a href="#">CONTACT</a></li>
-  </ul>
-
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav>
+      <ul class="nav navbar-nav navbar-right color:white">
+        <li> <%= link_to "Feed", feed_path, class: "btn btn-primary" %> </li>
+        <li><%= link_to "user directory",  "profiles#show", as: :profile, class: "btn btn-success" %> </li>
+        <li><%= link_to "sign out", destroy_user_session_path,
+  method: :delete, class: "btn btn-danger" %> </li>
+      </ul>
+    </nav>
+    </div>
   </div>
+</header>
+

@@ -20,4 +20,7 @@ Rails.application.routes.draw do
 	get "profiles" => "profiles#index"
 	
 	get "feed" => "profiles#feed"
+
+# Experimenting here.  May be cause of issue
+	# get '/:id', to: 'profiles#show', as: :profile
 end
